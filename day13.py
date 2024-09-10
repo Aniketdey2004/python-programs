@@ -2,15 +2,15 @@
 a="Harry"
 print(a.lower())#converts entire string to lowerCase
 print(a.upper())#converts entire string to Uppercase
-string="Aniket!!! Aniket!!! Aniket!!!"
+string="Aniket!!! Aniket!!! Aniket!!"
 print(string.rstrip("!")) #removes the trailing characters
 print(string.replace("Aniket","Soumashree")) #replaces every occurence of a particular string with a new string
 print(string.split(" ")) #splits the string into list elements based on separator in brackets
-sen="sPooN"
+sen="sPooN Is"
 print(sen.capitalize())#makes the first character of string uppercase and the rest to lowercase
 str1="Welcome to the console!!!"
 print(str1.center(50)) #it centres the string in the output window based on parameter
-print(string.count("Aniket"))#counts the number of occurence of a particular string
+print(string.count("Aniket",6,28))#counts the number of occurence of a particular string
 
 print(string.endswith("!!!")) #return bool value on whether a string ends with a particular string
 print(string.endswith("!!!",0,9)) #does similar work but sees range

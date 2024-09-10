@@ -1,25 +1,19 @@
-def isGreater(a, b=1): #a is required argument and b is default argument
-    if a > b:
-        print("The first number is greater")
-    else:
-        print("The second number is greater")
+marks=[3,5,6]
+print(marks)
+print(type(marks))
+print(marks[1])#we can access individual elements by their index
 
-isGreater(7)
-isGreater(b=9,a=8) #a and b are keyword arguments
+print(marks[-1])#negative index len-negative index
+l=[1,9,2,46,"harry",True] #we can store different data types
 
-isGreater(45,96)
+if "harry" in l: #we can check the presence of a element
+    print("yes")
+else:
+    print("No")
 
-def calavg(*numbers): #this is a way of variable length argument, numbers is a tuple
-    s=0
-    for i in numbers:
-        s=s+i
-    return s/len(numbers)
+#list slicing
+print(marks[1:3]) #same as string slicing
+print(marks[0:5:2]) #in slicing we can also give jump index
 
-c=calavg(7,9,16,17)
-print(c)
-
-def intro(**name):
-    print("hello i am",name["fname"],name["lname"])
-
-intro(fname="Aniket",lname="Dey")
-
+lst=[i*i for i in range(10) if i%2==0]
+print(lst)
